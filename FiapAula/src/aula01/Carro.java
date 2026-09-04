@@ -1,5 +1,7 @@
 package aula01;
 
+import java.util.Objects;
+
 public class Carro {
 
     // Atributos e caracteristicas
@@ -7,6 +9,7 @@ public class Carro {
     String modelo;
     String cor;
     int velocidadeAtual;
+
 
     // Metodos = Comportamentos e Açôes
 
@@ -16,5 +19,17 @@ public class Carro {
 
     public void freiando(){
         System.out.println("Freiano...");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Carro carro = (Carro) o;
+        return velocidadeAtual == carro.velocidadeAtual && Objects.equals(marca, carro.marca) && Objects.equals(modelo, carro.modelo) && Objects.equals(cor, carro.cor);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(marca, modelo, cor, velocidadeAtual);
     }
 }
