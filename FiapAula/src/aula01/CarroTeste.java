@@ -20,6 +20,14 @@ public class CarroTeste {
         System.out.println("Cor: " + carro1.cor);
         System.out.println("Velocidade Atual: " + carro1.velocidadeAtual);
 
+        carro1.acelerar();
+        carro1.acelerar();
+        carro1.frear();
+        carro1.frear();
+        carro1.acelerar();
+        carro1.acelerar();
+        carro1.frear();
+
         System.out.println("\n-----------------------------------------\n");
 
         Carro carro2 = new Carro();
@@ -34,5 +42,19 @@ public class CarroTeste {
         System.out.println("Modelo: " + carro2.modelo);
         System.out.println("Cor: " + carro2.cor);
         System.out.println("Velocidade Atual: " + carro2.velocidadeAtual);
+
+        carro2.acelerar();
+        carro2.acelerar();
+        carro2.acelerar();
+        carro2.acelerar();
+        carro2.frear();
+        carro2.acelerar();
+        carro2.frear();
+        carro2.acelerar();
+        carro2.acelerar();
+        carro2.frear();
+        carro2.frear();
+        carro2.acelerar();
+        carro2.frear();
     }
 }
