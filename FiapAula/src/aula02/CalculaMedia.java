@@ -19,7 +19,7 @@ public class CalculaMedia {
 
 
 //        Saida de Dados
-        System.out.println("A media é: " + media);
+//        System.out.println("A media é: " + media);
 
 
         Scanner lerNumero = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class CalculaMedia {
 
        float mediaNotas = (nota1 + nota2 + nota3) / 3;
 
-        System.out.println("\nA média dos números informados é: " + mediaNotas);
+        System.out.printf("\nA média dos números informados é: %.2f ", mediaNotas);
 
 
 
